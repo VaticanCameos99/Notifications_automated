@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-
 import webbrowser
 from selenium import webdriver
 import urllib
@@ -63,7 +62,7 @@ Thanks!
 
         send_box = driver.find_element_by_xpath('//span[@data-icon="send"]')
         send_box.click()
-        time.sleep(7)
+        time.sleep(4)
         print('Done :)')
 
 
@@ -75,5 +74,5 @@ chrome_options.add_argument("--profile-directory=Default")
 PATH = "/home/nirvi/Downloads/chromedriver_linux64/chromedriver"
 driver = webdriver.Chrome(PATH, options=chrome_options)
 
-df = pd.read_csv('/home/nirvi/Downloads/Yale/Antonio/ViT/phone_numbers.csv')
+df = pd.read_csv('phone_numbers.csv')
 prepare_msg(df, 'Name', 'Phone')
