@@ -19,7 +19,7 @@ Replace +1to_number with the number that has to recieve the text message.
 Replace SID with your Twilio account SID.  
 Replace auth_toke with your Twilio account auth token
 
-Output: 
+Output:    
 Sent from your Twilio account - Your Pytorch code has crashed with the following error: name 'paes' is not defined
 
 
